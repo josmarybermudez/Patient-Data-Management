@@ -9,16 +9,19 @@ export const Card = styled("div")<{}>(() => ({
   borderRadius: "8px",
   display: "flex",
   flexDirection: "column",
+  gap: "20px",
 }));
 
 export const BasicInfoContainer = styled("div")<{}>(() => ({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
+  alignItems: "center",
 }));
 
 export const PatientName = styled("h3")<{}>(() => ({
   color: Colors.TextPrimary,
+  margin: 0,
 }));
 
 export const MoreDetailsButton = styled(StyledButton)<{ $isExpanded: boolean }>(
@@ -27,6 +30,12 @@ export const MoreDetailsButton = styled(StyledButton)<{ $isExpanded: boolean }>(
     height: "40px",
     background: Colors.BackgroundLight,
     color: $isExpanded ? Colors.Error : Colors.TextSecondary,
+    fontSize: "16px",
+    fontWeight: "800",
+
+    "&:hover": {
+      background: Colors.Surface,
+    },
   })
 );
 
@@ -40,7 +49,7 @@ export const MoreInfoContainer = styled("div")<{}>(() => ({
 export const ImageDescriptionContainer = styled("div")<{}>(() => ({
   display: "flex",
   flexDirection: "row",
-  justifyContent: "space-between",
+  justifyContent: "flex-start",
   gap: "20px",
 }));
 
@@ -60,7 +69,7 @@ export const DescriptionWebsiteContainer = styled("div")<{}>(() => ({
 export const Description = styled("p")<{}>(() => ({
   fontSize: "14px",
   lineHeight: "18px",
-  fontFamily: "Roboto",
+  fontFamily: "Tahoma, sans-serif",
   padding: 0,
   margin: 0,
 }));
@@ -68,7 +77,7 @@ export const Description = styled("p")<{}>(() => ({
 export const WebsiteLink = styled("a")<{}>(() => ({
   fontSize: "14px",
   lineHeight: "18px",
-  fontFamily: "Roboto",
+  fontFamily: "Tahoma, sans-serif",
 }));
 
 export const EditPatientInfoButton = styled(StyledButton)<{}>(() => ({

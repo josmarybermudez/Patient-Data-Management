@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   BasicInfoContainer,
   Card,
@@ -12,11 +12,9 @@ import {
   PatientName,
   WebsiteLink,
 } from "./styles";
+import { PatientCardProps } from "./types";
 
-const PatientCard: React.FC<{
-  patient: any;
-  onEdit: (patient: any) => void;
-}> = ({ patient, onEdit }) => {
+const PatientCard = ({ patient, onEdit }: PatientCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
