@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Colors } from "../../constants/colors";
 // import Button from "../Button/Button"; todo not able to make work the overriding
 import { StyledButton } from "../Button/styles";
+import { Resolutions } from "../../constants/globals";
 
 export const Card = styled("div")<{}>(() => ({
   padding: "20px",
@@ -51,12 +52,21 @@ export const ImageDescriptionContainer = styled("div")<{}>(() => ({
   flexDirection: "row",
   justifyContent: "flex-start",
   gap: "20px",
+
+  [`@media screen and (max-width: ${Resolutions.Mobile})`]: {
+    flexDirection: "column",
+  },
 }));
 
 export const PatientImage = styled("img")<{}>(() => ({
   borderRadius: "50%",
   width: "40px",
   height: "40px",
+
+  [`@media screen and (max-width: ${Resolutions.Mobile})`]: {
+    width: "100px",
+    height: "100px",
+  },
 }));
 
 export const DescriptionWebsiteContainer = styled("div")<{}>(() => ({
@@ -78,6 +88,12 @@ export const WebsiteLink = styled("a")<{}>(() => ({
   fontSize: "14px",
   lineHeight: "18px",
   fontFamily: "Tahoma, sans-serif",
+}));
+
+export const ButtonContainer = styled("div")<{}>(() => ({
+  width: "100%",
+  display: "flex",
+  justifyContent: "flex-end",
 }));
 
 export const EditPatientInfoButton = styled(StyledButton)<{}>(() => ({

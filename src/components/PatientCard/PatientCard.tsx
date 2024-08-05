@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   BasicInfoContainer,
+  ButtonContainer,
   Card,
   Description,
   DescriptionWebsiteContainer,
@@ -37,9 +38,11 @@ const PatientCard = ({ patient, onEdit }: PatientCardProps) => {
               <WebsiteLink href={patient.website}>Website</WebsiteLink>
             </DescriptionWebsiteContainer>
           </ImageDescriptionContainer>
-          <EditPatientInfoButton onClick={() => onEdit(patient)}>
-            Edit
-          </EditPatientInfoButton>
+          <ButtonContainer>
+            <EditPatientInfoButton onClick={() => onEdit(patient)}>
+              Edit
+            </EditPatientInfoButton>
+          </ButtonContainer>
         </MoreInfoContainer>
       )}
     </Card>
