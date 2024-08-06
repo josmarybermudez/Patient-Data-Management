@@ -2,6 +2,10 @@
 
 A React application for managing patient data with features including data retrieval, display, editing (I could not implement this part), and new patients data creation.
 
+## Running at
+
+[https://josmarybermudez.github.io/patient-data-management/](https://josmarybermudez.github.io/patient-data-management/)
+
 ## Installation
 
 Clone the repository:
