@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/patient-data-management/static/css/main.b1a2a5a6.css",
+    "main.js": "/patient-data-management/static/js/main.de330fc9.js",
+    "static/js/453.4f2ea36b.chunk.js": "/patient-data-management/static/js/453.4f2ea36b.chunk.js",
+    "index.html": "/patient-data-management/index.html",
+    "main.b1a2a5a6.css.map": "/patient-data-management/static/css/main.b1a2a5a6.css.map",
+    "main.de330fc9.js.map": "/patient-data-management/static/js/main.de330fc9.js.map",
+    "453.4f2ea36b.chunk.js.map": "/patient-data-management/static/js/453.4f2ea36b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1a2a5a6.css",
+    "static/js/main.de330fc9.js"
+  ]
+}
